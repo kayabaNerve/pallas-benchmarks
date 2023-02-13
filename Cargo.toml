@@ -7,5 +7,5 @@ edition = "2021"
 
 [dependencies]
 dalek-ff-group = "0.1.5"
-pasta_curves = "0.4.1"
+pasta_curves = { version = "0.4.1", git = "https://github.com/kayabaNerve/pasta_curves", branch = "fast_mul" }
 k256 = "0.12"

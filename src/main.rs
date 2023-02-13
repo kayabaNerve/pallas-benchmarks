@@ -76,7 +76,7 @@ fn bench<G: Group + GroupEncoding>() {
 }
 
 fn main() {
-  println!("Ed25519. Please note this deser will check if it's prime order and accordingly be significantly off.");
+  println!("Ed25519. Point doubling is implemented via addition. deser will check if it's prime order and accordingly be significantly slower.");
   bench::<dalek_ff_group::EdwardsPoint>();
   println!("\r\nRistretto");
   bench::<dalek_ff_group::RistrettoPoint>();
